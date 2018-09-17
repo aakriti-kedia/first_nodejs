@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my contact page</title>
+	<link href='/css/style.css' rel='stylesheet' type='text/css'>
+</head>
+<body >
+<% include partial/navigation.ejs %>
+<div style="font-size:72px;padding-top:100px">
+	<b>WELCOME TO THE CONTACT PAGE</b>
+
+</div>
+<br>
+<br><br>
+<div style="font-size:48px">The best website</div>
+<div style="font-size:48px">contact <%=contact.name%></div>
+<div style="font-size:48px">contact <%=contact.number%></div>
+<form id='form1' method='POST' action="/contact" style="text-align:center;">
+
+First name:	<input type="text" name='name'>	<br>
+Number:<input type="number" name='contact'><br>
+Department:<input type="text" name='dept'><br>
+	<input type='submit' value="submit" >
+
+</form>
+
+</body>
+</html>
